@@ -1,18 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
 /* Start Header Section */
 
-header{
+header {
     height: 95vh;
-    /* background-image: url("./../assets/img/banner/banner8.jpg"); */
+    background-image: url('./../assets/img/banner/banner8.jpg');
     background-repeat: no-repeat;
     background-position: center;
 
@@ -22,32 +22,32 @@ header{
 
 /* Start Nav Bar */
 
-.navbar{
-    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5));
+.navbar {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
 }
 
-.nav-link{
+.nav-link {
     font-size: 16px;
     color: #fff !important;
 }
 
 .navbar-toggler,
 .navbar-toggler:hover,
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-.dropdowns{
+.dropdowns {
     position: relative;
 }
 
-.dropbtn{
+.dropbtn {
     background: none !important;
 }
 
-.dropdown-contents{
+.dropdown-contents {
     width: 230px;
     background-color: #f6f6f6;
 
@@ -59,9 +59,9 @@ header{
     display: none;
 }
 
-.dropdown-contents .search{
+.dropdown-contents .search {
     width: 100%;
-    background-image: url("./../assets/img/icon/searchicon.png");
+    background-image: url('./../assets/img/icon/searchicon.png');
     background-repeat: no-repeat;
     background-position: 10px center;
 
@@ -70,22 +70,22 @@ header{
     padding: 10px 5px 10px 40px;
 }
 
-.dropdown-contents .search:focus{
+.dropdown-contents .search:focus {
     outline: none;
 }
 
-.dropdown-contents a{
+.dropdown-contents a {
     color: #000;
     text-decoration: none;
     display: block;
     padding: 10px;
 }
 
-.dropdowns a:hover{
+.dropdowns a:hover {
     background-color: #ddd;
 }
 
-.dropdown-contents.show{
+.dropdown-contents.show {
     display: block;
 }
 
@@ -93,7 +93,7 @@ header{
 
 /* Start Banner Section */
 
-.banners{
+.banners {
     color: #fff;
     font-weight: 900;
     text-align: center;
@@ -101,13 +101,13 @@ header{
     position: absolute;
     left: 50%;
     top: 50%;
-    
-    transform: translate(-50%,-50%);
+
+    transform: translate(-50%, -50%);
 }
 
-.bannerheaders{
+.bannerheaders {
     min-width: 600px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
     box-shadow: 10px 10px 100px 20px #000;
     border: 2px dashed #fff;
     padding: 20px;
@@ -116,20 +116,20 @@ header{
     animation-duration: 2s;
 }
 
-.bannerparagraphs{
+.bannerparagraphs {
     animation-name: bnani;
     animation-duration: 2s;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     animation-fill-mode: backwards;
 }
 
-@keyframes bnani{
-    from{
+@keyframes bnani {
+    from {
         transform: translateY(100px);
         opacity: 0;
     }
 
-    to{
+    to {
         transform: translateY(0px);
         opacity: 1;
     }
@@ -141,20 +141,20 @@ header{
 
 /* Start Booking Section */
 
-.search-rooms{
+.search-rooms {
     width: 80%;
-    background: linear-gradient(to left, skyblue,steelblue);
+    background: linear-gradient(to left, skyblue, steelblue);
 
     padding: 30px 0;
     margin-top: -60px;
 
     position: absolute;
     left: 50%;
-    
+
     transform: translate(-50%);
 }
 
-.search-rooms .form-control{
+.search-rooms .form-control {
     max-width: 20%;
     display: inline-block; /* inline */
     margin: 10px 5px;
@@ -162,16 +162,16 @@ header{
     border: none;
 }
 
-.search-rooms .form-control:focus{
+.search-rooms .form-control:focus {
     box-shadow: none;
 }
 
-.search-rooms input[type=text]{
+.search-rooms input[type='text'] {
     width: 200px;
     transition: width 0.5s ease-in-out;
 }
 
-.search-rooms input[type=text]:focus{
+.search-rooms input[type='text']:focus {
     width: 100%;
 }
 
@@ -179,28 +179,28 @@ header{
 
 /* Start Room Section */
 
-.rows{
+.rows {
     display: flex;
     flex-wrap: wrap;
 }
 
-.columns{
+.columns {
     flex: 25%;
     max-width: 25%;
     padding: 0 5px;
 }
 
-.columns img{
+.columns img {
     width: 100%;
     margin: 5px;
 }
 
-.columns img:hover{
+.columns img:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 800px){
-    .columns{
+@media (max-width: 800px) {
+    .columns {
         flex: 50%;
         max-width: 50%;
     }
@@ -210,33 +210,33 @@ header{
 
 /* Start Our Services Section */
 
-.iconboxs{
+.iconboxs {
     background-color: #fff;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 
     padding: 50px 20px;
     position: relative;
 }
 
-.iconboxs::before{
+.iconboxs::before {
     content: '';
 
     width: 100%;
     height: 5%;
     background-color: purple;
-    
+
     position: absolute;
     left: 0;
     bottom: 0;
 
-    transition: height .5s;
+    transition: height 0.5s;
 }
 
-.iconboxs:hover::before{
+.iconboxs:hover::before {
     height: 8%;
 }
 
-.icons{
+.icons {
     width: 70px;
     height: 70px;
     background-color: purple;
@@ -254,14 +254,14 @@ header{
 
     transform: rotate(45deg);
 
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.icons i{
+.icons i {
     transform: rotate(-45deg);
 }
 
-.iconboxs:hover .icons{
+.iconboxs:hover .icons {
     background: none;
     color: purple;
     border: 2px solid purple;
@@ -271,30 +271,30 @@ header{
 
 /* Start Testimonials Section */
 
-.testimonial-container{
+.testimonial-container {
     position: relative;
 }
 
-.fa-quotes{
-    color: rgba(255,255,255,.3);
+.fa-quotes {
+    color: rgba(255, 255, 255, 0.3);
     font-size: 28px;
     position: absolute;
     top: 40px;
 }
 
-.fa-quote-right{
+.fa-quote-right {
     left: 0;
 }
 
-.fa-quote-left{
+.fa-quote-left {
     right: 0;
 }
 
-.testimonial{
+.testimonial {
     line-height: 30px;
 }
 
-.progress-bar{
+.progress-bar {
     width: 100%;
     height: 4px;
     background-color: tomato;
@@ -306,8 +306,8 @@ header{
     animation-iteration-count: infinite;
 }
 
-@keyframes myincrement{
-    0%{
+@keyframes myincrement {
+    0% {
         transform: scaleX(0);
     }
 
@@ -320,7 +320,7 @@ header{
 
 /* Start ADV Text Section */
 
-.adv-container{
+.adv-container {
     height: 400px;
     background-image: url('./../assets/img/banner/banner11.jpg');
     background-size: cover;
@@ -328,7 +328,7 @@ header{
     position: relative;
 }
 
-.advtext{
+.advtext {
     font-family: sans-serif;
     width: 50%;
     background-color: #fff;
@@ -349,20 +349,20 @@ header{
     mix-blend-mode: screen;
 }
 
-.adv-container:hover{
+.adv-container:hover {
     animation: myadvani 3s linear infinite alternate;
 }
 
-@keyframes myadvani{
-    0%{
+@keyframes myadvani {
+    0% {
         background-image: url('./../assets/img/banner/banner11.jpg');
     }
 
-    50%{
+    50% {
         background-image: url('./../assets/img/banner/banner10.jpg');
     }
 
-    100%{
+    100% {
         background-image: url('./../assets/img/banner/banner12.jpg');
     }
 }
@@ -371,30 +371,30 @@ header{
 
 /* Start Staffs Section */
 
-.cards{
+.cards {
     width: 300px;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 0; /* for remove padding in cards, cuz of row */
     margin: auto;
 }
 
-.cards img{
+.cards img {
     width: 100%;
 }
 
-.title{
+.title {
     font-size: 18px;
     color: grey;
 }
 
-.cards a{
+.cards a {
     text-decoration: none;
     color: #000;
     font-size: 22px;
 }
 
-.cards button{
+.cards button {
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -405,7 +405,7 @@ header{
     outline: 0;
 }
 
-.cards button:hover{
+.cards button:hover {
     opacity: 0.7;
 }
 
@@ -413,21 +413,21 @@ header{
 
 /* Start Property Section */
 
-.propertylists{
+.propertylists {
     color: #777;
     user-select: none;
     cursor: pointer;
 }
 
-.activeitems{
+.activeitems {
     color: #000;
 }
 
-.filters{
+.filters {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
 
@@ -435,7 +435,7 @@ header{
 
 /* Start Contact Section */
 
-.tabcontents{
+.tabcontents {
     color: #fff;
     text-align: center;
 
@@ -443,23 +443,23 @@ header{
     display: none;
 }
 
-#phone{
+#phone {
     background-color: gray;
 }
 
-#social{
+#social {
     background-color: slateblue;
 }
 
-#website{
+#website {
     background-color: slategray;
 }
 
-#address{
+#address {
     background-color: steelblue;
 }
 
-.btn-tabs{
+.btn-tabs {
     width: 25%;
     background-color: #666;
     color: #fff;
@@ -472,7 +472,7 @@ header{
     float: left;
 }
 
-.btn-tabs:hover{
+.btn-tabs:hover {
     background-color: #888;
 }
 
@@ -480,7 +480,7 @@ header{
 
 /* Start Chat Box */
 
-.chat-btn{
+.chat-btn {
     width: 50px;
     height: 50px;
     background-color: #555;
@@ -492,7 +492,7 @@ header{
     outline: none;
 
     opacity: 0.8;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,7 +504,7 @@ header{
     bottom: 25px;
 }
 
-.chat-popup{
+.chat-popup {
     background-color: #fff;
     border: 3px solid #f3f3f3;
 
@@ -516,17 +516,17 @@ header{
     z-index: 10;
 }
 
-.chat-container{
+.chat-container {
     max-width: 300px;
     padding: 10px;
 }
 
-.messages{
+.messages {
     height: 200px;
     overflow-y: scroll;
 }
 
-.chat-container textarea{
+.chat-container textarea {
     width: 100%;
     background-color: #f2f2f2;
 
@@ -537,51 +537,51 @@ header{
     resize: none;
 }
 
-.chat-container textarea:focus{
+.chat-container textarea:focus {
     background-color: #ddd;
 }
 
-.chat-container .btns{
+.chat-container .btns {
     width: 100%;
     background-color: steelblue;
     color: #fff;
 
     border: none;
     outline: none;
-    margin-bottom :10px;
+    margin-bottom: 10px;
 
     opacity: 0.8;
 
     cursor: pointer;
 }
 
-.chat-container .btns:nth-of-type(2){
+.chat-container .btns:nth-of-type(2) {
     background-color: red;
 }
 
 .chat-btn:hover,
-.chat-container .btns:hover{
+.chat-container .btns:hover {
     opacity: 1;
 }
 
-.admin{
+.admin {
     background-color: #aaa;
 }
 
-.user{
+.user {
     background-color: #ddd;
 }
 
-.containers{
+.containers {
     padding: 15px;
     position: relative;
 }
 
-.time-left{
+.time-left {
     color: #777;
 }
 
-.time-right{
+.time-right {
     color: #777;
     position: absolute;
     bottom: 0;
